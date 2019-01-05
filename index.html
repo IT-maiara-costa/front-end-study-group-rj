@@ -1,26 +1,22 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
-	<title>Portfolio</title>
+	<title> Desafio 1</title>
 
-	<style> 
-	header img{
-		max-width: 200px;	/* CSS Teste que foi usado pra diminuir a imagem do header */
-	}
+	<!--<link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
 
-	</style>
 
 </head>
 <body>
 
 	<header>
-		<img src="images/logo.png" alt="Logo WooMakeCoders">
+		<img src="images/logo.png" alt="LogoWooMakeCoders">
 		<nav>
 			<ul>
-				
-				<li><a href="#">HOME</a></li>
-				<li><a href="#">SERVICOS</a></li>
+				<li><a href="#servicos">HOME</a></li>
+				<li><a href="#website">SERVICOS</a></li>
 				<li><a href="#">SOBRE MIM</a></li>
 				<li><a href="#">CONTATO</a></li>
 			</ul>			
@@ -28,39 +24,64 @@
 	</header>
 
 
-	<section>
-		<H1>BEM VIND@</H1>
-		<h3>Maiara Costa</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 
-		<img src="images/slider01.png" alt="Borboleta">
+	<section id="welcome">
+
+
+		<div id="textos">
+			<H1>BEM VIND@</H1>
+			<h3>Maiara Costa</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+		</div>
+
+
+
+
+		<img src="images/slider01.png" alt="Borboleta" class="slider"> 
 
 	</section>		
 
-	<br>
+
+	
 
 	<section id="servicos">
 		<h1>Serviços</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 
-		<img src="images/Service1.png" alt="Websites">
-		<h3>Websites</h3>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+		<hr />
 
-		<img src="images/Service2.png" alt="Templates">
-		<h3>Templates</h3>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+		<div id="container">
 
-		<img src="images/Service3.png" alt="Serviços">
-		<h3>Temas Wordpress</h3>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>		
+			<div>
+				<img src="images/Service1.png" alt="Websites" id="website">
+				<h3>Websites</h3>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+			</div>
+
+			<div>
+				<img src="images/Service2.png" alt="Templates" class="templates">
+				<h3>Templates</h3>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+			</div>
+
+			<div>
+				<img src="images/Service3.png" alt="Temas" class="temas"> 
+				<h3>Temas Wordpress</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>	
+
+			</div>	
+		</div>
 	</section>
 
-	<br>
+	
 	<section id="trabalhos">
 		<h1>Meus Trabalhos</h1>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<hr />
 
 		<!--<div style="border-top: 2px solid purple"></div> -->
 
@@ -73,68 +94,101 @@
 			</ul>			
 		</nav>
 
-		<img src="images/Portfolio01.png" alt="Website1" >
-		<img src="images/Portfolio02.png" alt="Website2">
-		<img src="images/Portfolio03.png" alt="Website3">
+		<div class="works">
+			<figure> 
+				<img src="images/Portfolio01.png" alt="Website1">
+				<figcaption>  Thumbnail Thumbnail ThumbnailThumbnailThumbnailThumbnail </figcaption>
+			</figure>
+			
+			<figure>
+				<img src="images/Portfolio02.png" alt="Website2">
+				<figcaption>  Thumbnail caption </figcaption>
+			</figure>
+			<figure>
+				<img src="images/Portfolio03.png" alt="Website3">
+				<figcaption>  Thumbnail caption </figcaption>
+
+			</figure>
+			
+		
+		</div>
 		
 	</section>
 
+	<svg id="bigTriangleShadow" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 100" preserveAspectRatio="none">
+		<path id="trianglePath1" d="M0 0 L50 100 L100 0 Z"></path>
+	</svg>
+
+
 	<section id="sobreeu">
+
 		<h1>Quem sou eu</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<hr />
 
 		<figure>
 			<img src="images/photo.png" alt="Fotografia">
 			<figcaption>Joana D'arc </figcaption>
 		</figure>
 
+		
 
 		<h3>Sobre mim</h3>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut </p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
 
 		<h3>Habilidades</h3>
 
-		<label for="Javascript">JavaScript:</label>
 
-		<progress id="Javascript"  max="100" value="70">70%</progress>
+		<div> 
+			<label for="Javascript">JavaScript</label>
+			<progress id="Javascript"  max="100" value="70">70%</progress>
 
-		<br>
 
-		<label for="HTMLCSS"> HTML & CSS:</label>
+			<label for="HTMLCSS"> HTML & CSS</label>
+			<progress id="HTMLCSS"  max="100" value="50">50% </progress>
 
-		<progress id="HTMLCSS"  max="100" value="50">50% </progress>
 
-		<br>
+			<label for="jQuery">jQuery</label>
+			<progress id="jQuery"  max="100" value="70">70% </progress>
 
-		<label for="jQuery">jQuery:</label>
 
-		<progress id="jQuery"  max="100" value="70">70% </progress>
-
-		<br>
-
-		<label for="wordpress">Wordpress:</label>
-
-		<progress id="wordpress"  max="100" value="100">100% </progress>
+			<label for="wordpress">Wordpress</label>
+			<progress id="wordpress"  max="100" value="100">100% </progress>
+		</div>	
 		
 	</section>
-	<br>
+
 
 	<section id="contato">
 		<h1>Contato</h1>
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+
+		<hr />
 
 		<address>
-			<a href="mailto:meuemail@mail.com">meuemail@mail.com</a><br/>
-			<a href="tel:+5521987654321">+55 21 987654-321</a><br/>
+			<a href="mailto:meuemail@mail.com">meuemail@mail.com</a> <br> <br>
+			<a href="tel:+5521987654321">+55 21 987654-321</a>
 		</address>
 
 		<h3>Mídias</h3>
-		
+
+		<hr />
+
+		<div id="icons">
+			<a href="google.com"> <img src="images/icons/iconfinder_Behance_2745025.svg" alt="behance icon" > </a>
+			<a href="google.com"> <img src="images/icons/iconfinder_github_287583.svg" alt="github icon"> </a>
+			<a href="google.com"> <img src="images/icons/iconfinder_LinkedIN_2744970.svg" alt=" linkedin icon"> </a>
+		</div>
+
 	</section>
 
 	<footer>
-		<p>Women  + Tech  = &lt; &sol;strong &gt; </p>
+		Women  + Tech  = &lt; &sol;strong &gt; 
 	</footer>
 
 </body>
