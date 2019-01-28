@@ -2,10 +2,10 @@
 <html lang="pt-br">
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title> Desafio 1</title>
-
-	<!--<link rel="stylesheet" type="text/css" href="style.css"> -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 
 
 </head>
@@ -15,10 +15,11 @@
 		<img src="images/logo.png" alt="LogoWooMakeCoders">
 		<nav>
 			<ul>
-				<li><a href="#servicos">HOME</a></li>
-				<li><a href="#website">SERVICOS</a></li>
-				<li><a href="#">SOBRE MIM</a></li>
-				<li><a href="#">CONTATO</a></li>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#servicos">SERVICOS</a></li>
+				<li><a href="#portfolio">PORTFOLIO</a></li>
+				<li><a href="#sobremim">SOBRE MIM</a></li>
+				<li><a href="#contato">CONTATO</a></li>
 			</ul>			
 		</nav>
 	</header>
@@ -27,15 +28,11 @@
 
 	<section id="welcome">
 
-
 		<div id="textos">
-			<H1>BEM VIND@</H1>
+			<H1>bem vind@</H1>
 			<h3>Maiara Costa</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 		</div>
-
-
-
 
 		<img src="images/slider01.png" alt="Borboleta" class="slider"> 
 
@@ -49,23 +46,24 @@
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<hr />
+		<div class="line"></div>
 
 		<div id="container">
 
-			<div>
+			<div class="container-items">
 				<img src="images/Service1.png" alt="Websites" id="website">
 				<h3>Websites</h3>
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
 			</div>
 
-			<div>
+			<div class="container-items" >
 				<img src="images/Service2.png" alt="Templates" class="templates">
 				<h3>Templates</h3>
 				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed </p>
+
 			</div>
 
-			<div>
+			<div class="container-items">
 				<img src="images/Service3.png" alt="Temas" class="temas"> 
 				<h3>Temas Wordpress</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>	
@@ -75,16 +73,15 @@
 	</section>
 
 	
-	<section id="trabalhos">
+	<section id="portfolio">
 		<h1>Meus Trabalhos</h1>
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<hr />
 
-		<!--<div style="border-top: 2px solid purple"></div> -->
 
+		<div class="line"></div>
 		<nav>
 			<ul>		
 				<li>Tudo</li>
@@ -95,22 +92,23 @@
 		</nav>
 
 		<div class="works">
+
 			<figure> 
 				<img src="images/Portfolio01.png" alt="Website1">
-				<figcaption>  Thumbnail Thumbnail ThumbnailThumbnailThumbnailThumbnail </figcaption>
+				<figcaption>  Thumbnail caption  </figcaption>
 			</figure>
 			
 			<figure>
 				<img src="images/Portfolio02.png" alt="Website2">
 				<figcaption>  Thumbnail caption </figcaption>
 			</figure>
+
 			<figure>
 				<img src="images/Portfolio03.png" alt="Website3">
 				<figcaption>  Thumbnail caption </figcaption>
-
 			</figure>
 			
-		
+
 		</div>
 		
 	</section>
@@ -126,7 +124,7 @@
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<hr />
+		<div class="line"></div>
 
 		<figure>
 			<img src="images/photo.png" alt="Fotografia">
@@ -135,15 +133,15 @@
 
 		
 
-		<h3>Sobre mim</h3>
+		<h3 id="sobremim">Sobre mim</h3>
 
-		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<p id="desc-sobre"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<h3>Habilidades</h3>
+		<h3 id="habilidade">Habilidades</h3>
 
 
-		<div> 
+		<div class="habilidades"> 
 			<label for="Javascript">JavaScript</label>
 			<progress id="Javascript"  max="100" value="70">70%</progress>
 
@@ -168,7 +166,7 @@
 		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 		</p>
 
-		<hr />
+		<div class="line"></div>
 
 		<address>
 			<a href="mailto:meuemail@mail.com">meuemail@mail.com</a> <br> <br>
@@ -177,7 +175,8 @@
 
 		<h3>Mídias</h3>
 
-		<hr />
+		<div id="last-line"></div>
+		
 
 		<div id="icons">
 			<a href="google.com"> <img src="images/icons/iconfinder_Behance_2745025.svg" alt="behance icon" > </a>

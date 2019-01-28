@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro:600');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:700,800,900');
+
 
 
 *{
@@ -6,50 +8,72 @@
 	padding: 0;
 }
 
-#servicos, #contato, #trabalhos, #sobreeu {
+
+h1, h3{
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+}
+
+
+#servicos, #contato, #portfolio, #sobreeu {
 	padding: 3%  1%;
 }
 
 
 
-#trabalhos p, #sobreeu  p, #contato  p , #servicos  p{
+#portfolio p, #sobreeu  p, #contato  p , #servicos  p{
 	letter-spacing:1px;
 	word-wrap: break-word;
 	white-space: pre-wrap;  
 	padding: 0 5%;
 	text-align: center;
-	
+	line-height: 1.25em;
 }
 
 
 
 body{
 	background: #FFCC1D;
-	font-family: 'Lato', sans-serif;
+	font-size: 1em;
+	font-family: 'Open Sans', sans-serif;
+	
+
 }
 
+
+h1 {
+	color:#EE1E53;
+	text-align: center;
+	padding-bottom: 2%;
+	font-size: 3em;
+}
+
+h3{
+	font-size: 1.75em;
+}
 
 #trianglePath1 {
 	fill: #fdad1a;
 	stroke: #fdad1a;
 }
 
-hr{
+.line{
 	border: 0;
 	margin: 1% 2%;
 	height: 1px;
 	align-items: center;
-    background: #333;
+	background: #333;
 }
 
+#last-line{
+	margin: 1% 15%;
+	border: 0;
+	height: 1px;
+	align-items: center;
+	background: #333;
 
-section  > h1 {
-	color:#EE1E53;
-	text-align: center;
-	padding-bottom: 2%;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 30px;
 }
+
 
 header{
 	display: flex;
@@ -85,7 +109,7 @@ header nav  ul li a {
 }
 
 header nav ul li a:hover{
-  border: 1px solid #D9CE8F;
+	border: 1px solid #D9CE8F;
 }
 
 #welcome {
@@ -95,15 +119,9 @@ header nav ul li a:hover{
 	flex-wrap: wrap;
 	padding: 30px;
 
-	background: 
-   
-    linear-gradient(
-      rgba(238, 32, 84, 0.92), 
-      rgba(238, 32, 84, 0.92)
-    ),
-   
-    url("images/Slider.png");
-	
+	background:    linear-gradient(rgba(238, 32, 84, 0.92),  rgba(238, 32, 84, 0.92) ),
+	url("images/Slider.png");
+
 	padding-top: 5%;
 	background-size: contain;
 	padding-bottom: 10%;
@@ -122,11 +140,13 @@ header nav ul li a:hover{
 	padding-bottom: 20px;
 	color: black;
 	font-weight: bolder;
+	text-align: left;
 }
 
 #textos p{
-  padding-top: 20px;
-  color:white;
+	padding-top: 20px;
+	color:white;
+	line-height: 1.25em;
 
 }
 
@@ -144,58 +164,55 @@ header nav ul li a:hover{
 	background: #191A1C;	
 }
 
-#servicos   p {
-	text-align: center;
-	color: #C8905C;
-}
-
 
 #container{
 	display: flex;
 	flex-direction: row;
-     flex-wrap: wrap;
-  	justify-content: space-between;
-  	padding-bottom: 4%;
-  	padding-top: 4%;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 4%;
+	padding-top: 4%;
 }
 
 
 
-#container  div{
+#container  .container-items{
 	flex-grow: 1;
-    flex-basis: 100px;
+	flex-basis: 100px;
 	text-align: center;
 	margin:  0 3%;
 }
 
 
-#servicos div  h3{
+#servicos  h3{
 	color: #ED8731;
+	margin: 3% 0;
+
+
 }
 
-#servicos div  p{
+#servicos   p{
 	color: white;
+	padding-bottom: 4% ;
 }
 
-#servicos div  h3, #servicos div  p{
-	padding: 10px 0;
 
-}
 
-#servicos div img{
+#servicos  img{
 	border-radius: 50%;
 	width: 100px;
 	height: 100px;
 	border: 4px solid white;
 }
 
-/* trabalhos */
+/* portfolio */
 
-#trabalhos{
+#portfolio{
 	background: #FDAD1A;
 }
 
-#trabalhos nav  ul{
+
+#portfolio nav  ul{
 	display: flex;
 	flex-direction: row;
 	justify-content:  flex-start;
@@ -204,7 +221,7 @@ header nav ul li a:hover{
 
 
 
-#trabalhos nav ul  li{
+#portfolio nav ul  li{
 	padding: 5px 20px;
 	list-style: none;
 	border: 1px solid black;
@@ -212,12 +229,12 @@ header nav ul li a:hover{
 }
 
 nav  ul  li:hover {
-   	background: black;
-   	color:white;
+	background: black;
+	color:white;
 }
 
 
-#trabalhos div.works{
+.works{
 	padding: 0 40px;
 	display:flex;
 	flex-direction: row;
@@ -226,23 +243,16 @@ nav  ul  li:hover {
 	flex-wrap: wrap;
 }
 
-#trablahos div.works figure{
-	border: thin #c0c0c0 solid;
-    display: flex;
-    flex-flow: column;
-    padding: 5px;
-    max-width: 220px;
-    margin: auto;
-}
 
-#trabalhos div.works  figure img {
+
+.works  figure img {
 	width: 310px;
 	height: 310px;
 	border-bottom: 1px solid black;
 	display: block;
 }
 
-#trabalhos div.works  figure  figcaption {
+.works  figure  figcaption {
 
 	display: block;
 	padding: 30px 0px;
@@ -250,18 +260,18 @@ nav  ul  li:hover {
 	text-align: center;
 
 	color: #fff;
-    font: italic smaller sans-serif;
+	font: italic smaller sans-serif;
 
-    background: black;
-    width: 310px;
-    word-break: break-all;
+	background: black;
+	width: 310px;
+	word-break: break-all;
 
 }
 
 /* quem sou eu */
 
 #sobreeu{
-	
+
 	background: #191A1C;
 	align-items: center;
 	padding-bottom: 3%;
@@ -270,17 +280,17 @@ nav  ul  li:hover {
 #sobreeu figure img{
 	padding: 20px 0;
 	display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
+	margin-left: auto;
+	margin-right: auto;
+
 }
 
 #sobreeu figure figcaption{
-	 color:#E27E28;
-	 text-align: center;
-	 padding-bottom: 10px;
-	 font-weight: bolder;
-	 
+	color:#E27E28;
+	text-align: center;
+	padding-bottom: 10px;
+	font-weight: bolder;
+
 }
 
 #sobreeu  p{
@@ -288,63 +298,74 @@ nav  ul  li:hover {
 }
 
 #icons{
-text-align: center;
-display: flex;
-flex-direction:row;
-justify-content: center;
+	text-align: center;
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
 }
 
 #icons img{
-height: 30px;
- margin: 10px;
+	height: 30px;
+	margin: 10px;
 }
 
-
-section#sobreeu h3:nth-of-type(1){
-	 color:#E27E28;
-	 text-align: center;
-	 padding-top: 10px;
-	 font-weight: bold;
-	 padding-bottom: 2%;
-	 font-family: 'Source Sans Pro', sans-serif;
-
-
-}
-
-section#sobreeu h3:nth-of-type(2){
+#sobreeu h3{
 	color:#E27E28;
+	font-family: 'Raleway', sans-serif;
+}
+
+
+#sobremim {
+	text-align: center;
+	padding-top: 10px;
+	font-weight: bold;
+	padding-bottom: 2%;
+}
+
+
+#habilidade {
 	margin: 1% 5%;
 	padding: 30px 0;
-	font-family: 'Source Sans Pro', sans-serif;
-
-
 }
 
 
 
-#sobreeu h3 + p{		/* pega o  p que esta abaixo do h3 */
-	color:white;
+p#desc-sobre{
+	color: white;
 	text-align: center;
 }
 
 
+
+.habilidades{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.habilidades label{
+	color: white;
+	margin: 1% 5%;
+
+}
+
 progress {
-   background-color: white;
-  width: 300px;
-  height: 26px;
-  border: 1px solid white;
- display: block;
- margin: 1% 5%;
- 
+	background-color: white;
+	width: 300px;
+	height: 26px;
+	border: 1px solid white;
+	display: block;
+	margin: 1% 5%;
+
 }
 
 progress::-webkit-progress-bar {
-   background-color: white;
+	background-color: white;
 
 
 }
 progress::-webkit-progress-value {
-   background-color: #822051;
+	background-color: #822051;
 }
 
 
@@ -352,10 +373,6 @@ progress::-moz-progress-bar { 		/* Firefox */
 	background: #822051; 
 } 
 
- #sobreeu  label {
- color:white;
-  margin: 1% 5%;
-}
 
 
 /* CONTATO */
@@ -364,7 +381,7 @@ progress::-moz-progress-bar { 		/* Firefox */
 	background: #FDAD1A;
 }
 
- address, #contato h3{
+address, #contato h3{
 	text-align: center;
 }
 
@@ -374,11 +391,6 @@ progress::-moz-progress-bar { 		/* Firefox */
 
 address{
 	padding: 2% 0;
-}
-
-
-#contato h3 + hr {
-	margin: 1% 15%;
 }
 
 
@@ -404,6 +416,184 @@ footer{
 	text-align: center;
 	padding-top: 4px;
 	padding-bottom: 2px;
+}
+
+@media screen and (max-width: 767px){		
+
+
+	h1{
+		font-size: 2em;
+		padding: 10% 0;
+	}
+
+	h3{
+		font-size: 1.375em;
+	}
+
+
+	header{
+		flex-direction: column;
+		align-items: center;
+		padding: 4%  0;
+
+
+	}
+
+	header nav{
+		margin: 5% 0px;
+	}
+
+	header nav ul{
+		flex-direction: column;
+		align-items: center;
+		padding: 20px 0px;
+	}
+
+	header nav ul li{
+		padding: 7% 0;
+	}
+
+	header nav ul li a {
+		padding: 5px;
+	}
+
+	header  img{
+		max-width:  440px;
+		max-height:  80px;
+	}
+
+	#welcome{
+		justify-content: center;
+
+	}
+
+	#textos, #welcome h1{
+		margin: 0;
+		text-align: center;
+
+	}
+
+	#welcome > img{
+		display: none;
+	}
+
+
+	/* SERVIÇOS */
+
+	#container{
+		flex-direction: column;
+		justify-content: center;
+
+
+	}
+	.container-items{
+		margin: 0 5%;
+		padding: 10% 0;
+	}
+
+	/* portfolio */
+
+	.portfolio ul{
+		align-items: center;
+	}
+
+	#portfolio nav ul{
+		padding: 0;
+		margin: 0;
+
+		justify-content: center;
+	}
+
+	#portfolio nav ul li {
+		padding: 5px 10px;
+	}
+
+	.works{
+		justify-content: center;
+
+
+
+	}
+
+	.works figure{
+		padding: 20px 0;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+
+	.works figure img, .works figure figcaption{
+		width: 259px;
+	}
+
+
+
+	/* sobre eu */
+
+
+	
+	#sobreeu figure img{
+		width: 259px;
+
+	}
+
+	#habilidade{
+		text-align: center;
+
+	}
+
+
+
+	.habilidades{
+		align-items: center;
+	}
+
+	.habilidades progress{	
+		margin-top: 1%;
+		margin-bottom: 5%;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {  
+
+	h1{
+		font-size: 2.5em;
+	}
+
+	h3{
+		font-size: 1.5em;
+	}
+
+	#welcome{
+		flex-wrap: nowrap;
+		padding-bottom: 10%;
+		align-items: center;
+	}
+
+	#textos, #textos h1{
+		text-align: center;
+	}
+
+	#textos {
+		width: 400px;
+		margin-left: 20px;
+	}
+
+	#welcome img {
+		max-width: 100px;
+		max-height: 100px;
+
+	}
+
+	#container{
+		flex-direction: column;
+	}
+
+	.works figure{
+		padding: 5% 0;
+	}
 }
 
 
